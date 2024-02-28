@@ -23,13 +23,17 @@ body {
     margin: 140px;
 }
 
+.todos-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .todos-list input {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     font-size: 25px;
     padding: 10px 20px;
     border: none;
-
 }
 
 .todos-list input::placeholder {
@@ -46,4 +50,26 @@ body {
 .todos-list input:focus::after {
     border: 5px solid black;
 
+}
+
+.footer {
+    color: darkgray;
+    text-align: center;
+    justify-self: end;
+    margin-top: 30px;
+}
+
+.show {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    font-size: 25px;
+    padding: 10px 20px;
+    border: none;
+    margin: 1px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: gray;
 }
